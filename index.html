@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Intro to HTML and CSS</title>
+
+		<meta name="description" content="An introduction to HTML and CSS for Girls in Tech Milwaukee">
+		<meta name="author" content="Lucas Willett">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+    <style>
+      strong  { font-weight: normal; color: orange; font-variant: normal; }
+      .breakout { color: orange; }
+      .reveal a:not(.image) { color: orange; }
+      .reveal pre {box-shadow:none; margin-bottom: 0;}
+      .reveal code { border: 4px solid white; }
+    </style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>Intro to HTML &amp; CSS</h1>
+					<h3>The web is waiting.</h3>
+					<p>
+						<small>Brought to you by <a href="https://cie.uchicago.edu/">Chicago Innovation Exchange</a> and <a href="http://devbootcamp.com">Dev Bootcamp</a></small>
+					</p>
+				</section>
+
+        <!-- Intro / Outline -->
+        <section>
+          <h2>Hi everyone!</h2>
+          <p>Some "rules" for today:</p>
+          <ul>
+            <li>We are here to support your learning!</li>
+            <li>Ask <strong>every single question</strong> you have.</li>
+            <li>Take advantage of the amazing person next to you!</li>
+            <li>If you want to do it, <strong>do it</strong>. Have fun with this.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Welcome!</h2>
+          <p>Let's get to know each other!</p>
+          <ul>
+            <li>What's your name, and who are you?</li>
+            <li>What do you want to get out of this session?</li>
+            <li>What's <strong>something quirky</strong> about you?</li>
+          </ul>
+        </section>
+
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>What are HTML and CSS?</li>
+						<li>Exploration of an HTML element</li>
+						<li>Common HTML elements</li>
+						<li class="breakout">Breakout - Build a site</li>
+						<li>Explanation of CSS</li>
+						<li class="breakout">Breakout - Improve your site</li>
+						<li>Positioning with CSS</li>
+						<li class="breakout">Breakout - Make your site truly awesome</li>
+					</ul>
+				</section>
+
+        <section>
+          <h2>Disclaimer!</h2>
+        </section>
+
+        <!-- HTML and CSS and the role they play in the web (5min) -->
+				<section>
+					<h2>HTML and CSS: Together at Last</h2>
+				</section>
+
+				<section>
+					<h2>What is HTML?</h2>
+          <p>HTML is the coding language that lets us <strong>build websites</strong> and create its content.</p>
+          <img src="img/devbootcamp.jpg"/>
+				</section>
+
+				<section>
+					<h2>What is HTML?</h2>
+          <p>You can right-click and press <strong>View Source</strong> on any webpage to see this code.</p>
+          <img src="img/devbootsource.png"/>
+				</section>
+
+				<section>
+					<h2>Why use HTML?</h2>
+          <p>It was invented as a language to share scientific papers between universities.</p>
+          <p>Primarily used in academic papers for <strong>layout</strong> and <strong>providing links</strong> to other papers.</p>
+				</section>
+
+				<section>
+					<h2>Why use HTML?</h2>
+          <p>This method of describing a <strong>bunch of information</strong> linked to other bunches of information clearly proved useful, as it shaped the Internet into what it is today.</p>
+				</section>
+
+				<section>
+					<h2>Why use HTML?</h2>
+          <p><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage<br />
+          is a format for describing your document and links to other documents available on the web.</p>
+          <p>It provides the <strong>semantic structure</strong> for your website's content.</p>
+				</section>
+
+        <section>
+          <h2>My website?</h2>
+          <div>Your Content</div>
+          <div><span class="breakout">+ HTML </span>(Semantic Structure)</div>
+          <div><span class="breakout">+ CSS </span>(Presentation)</div>
+          <div class="breakout">= Your Website</div>
+          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+        </section>
+
+        <!-- A breakdown of an HTML element &#45; tag, attr value (5min) -->
+        <section>
+          <h2>Breaking It Down</h2>
+          <ul>
+            <li>You can use a paragraph tag (<strong>&lt;p&gt;</strong>) for your content.</li>
+            <li>By putting your content into a HTML tag, you are giving your website <strong>semantic structure</strong>.</li>
+            <pre>
+              <code class="html">
+      <p>Your content will go here.</p>
+              </code>
+            </pre>
+            <li>Making your content blue and big is <strong>presentation</strong>.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Breaking it down</h2>
+          <p>An <strong>element</strong> is one individual component of HTML.</p>
+          <p>It could be a paragraph, a heading, a table, a link, an image, or more.</p>
+            <pre>
+              <code class="xml">
+    <p>Your content will go here.</p>
+              </code>
+            </pre>
+        </section>
+
+        <section>
+          <h2>Breaking it down</h2>
+          <p>A <strong>tag</strong> marks the beginning and end of an element.</p>
+            <pre>
+              <code class="xml">
+    <tagname>This is stuff in the tags.</tagname>
+              </code>
+            </pre>
+          <p>Tags always travel in pairs -<br />an opening tag, and a complimentary closing tag.</p>
+        </section>
+
+        <section>
+          <img src="img/tagbreakdown.png" style="height: 650px;" />
+        </section>
+
+        <section>
+          <h2>Breaking it down</h2>
+          <p>Inside the tag, we can put <strong>attributes</strong> to provide additional information about the element.</p>
+          <p>We can specify class, ID, the target of a link, the source location of an image and more.</p>
+            <pre>
+              <code class="html">
+    <a href="http://google.com">Google</a>
+
+    <img src="images/my-photo.jpg" />
+              </code>
+            </pre>
+          <p><strong>Attributes</strong> go inside the opening tag, just before the right angle bracket.</p>
+          <p><strong>Values</strong> are assigned to an element, and must be contained in quotes.</p>
+        </section>
+
+        <section>
+          <h2>The structure</h2>
+          <p>The whole structure of an HTML document is <br/>elements <strong>nested inside</strong> each other.</p>
+            <pre>
+              <code class="html">
+    <p>
+      I really enjoyed my mum's
+      <a href="http://mymum.com/cpp-recipe">Chicken Pot Pie</a> recipe!
+    </p>
+              </code>
+            </pre>
+          <p>Whichever element opens <strong>first</strong>, closes <strong>last</strong>.
+        </section>
+
+        <!-- Examples of some common HTML elements (5min) -->
+        <section>
+          <h2>Common elements: paragraph</h2>
+          <p>We've seen the paragraph (<strong>&lt;p&gt;</strong>) tag, but <br />here's how it looks in the browser:</p>
+          <img src="img/p-tag.png" style="width: 600px;" />
+        </section>
+
+        <section>
+          <h2>Common elements: headings</h2>
+          <p>There are also numbered heading tags,<br/> starting from <strong>&lt;h1&gt;</strong> up to <strong>&lt;h6&gt;</strong>.</p>
+          <p>These are used for creating big document headings, <br/>and present relative to their numbers:</p>
+          <img src="img/heading-tags.png" style="width: 600px;" />
+        </section>
+
+        <section>
+          <h2>Common elements: images</h2>
+          <p><strong>&lt;img&gt;</strong> tags are used for embedding images into a page.</p>
+          <p>Because images are cool.</p>
+          <pre>
+            <code>
+  <img src="http://corgi.butt/treadmill.gif" />
+            </code>
+          </pre>
+          <img src="http://www.dailybunny.com/.a/6a00d8341bfd0953ef0148c793026c970c-pi"/>
+        </section>
+
+        <!-- The idea of implicit styling by a browser (5min) -->
+        <section>
+          <h2>Aside: browser styling</h2>
+          <p>Browsers provide a default styling to HTML elements.</p>
+          <p>We talked about HTML being a <strong>document</strong> language before; think of the default styles as Microsoft Word-esque styling.</p>
+        </section>
+
+        <!-- DEMO : Build a website using only tags (20min) -->
+        <section>
+          <h1>omg lets build.</h1>
+          <p><a href="http://bit.ly/html-css-intro">http://bit.ly/html-css-intro</a></p>
+        </section>
+
+        <section>
+          <h2>Common elements: links</h2>
+          <p>A link has three main elements:</p>
+          <ul>
+            <li><strong>&lt;a&gt;</strong> - tag.</li>
+            <li><strong>href</strong> - attribute. (http://devbootcamp.com)</li>
+            <li><strong>value</strong> - text. (Dev Bootcamp)</li>
+          </ul>
+          <pre>
+            <code>
+  <a href="http://devbootcamp.com">Dev Bootcamp</a>
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Common elements: line breaks</h2>
+          <p>Using <strong>&lt;br /&gt;</strong> lets you add manual newlines into text content.</p>
+          <pre>
+            <code>
+  <p>
+    This is <br />
+    the part when I say <br />
+    I don't want ya <br />
+    I'm stronger than I've been before.
+  </p>
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Common elements: <br />unordered and ordered lists</h2>
+          <p><strong>&lt;ul&gt;</strong> and <strong>&lt;ol&gt;</strong> allow you to create lists with bullets or numbers respectively.</p>
+          <p><strong>&lt;li&gt;</strong> adds list items to either. This is where your <strong>content</strong> lives.</p>
+          <pre style="float: left; width:500px;">
+            <code>
+  <ul>
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ul>
+
+  <ol>
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ol>
+            </code>
+          </pre>
+          <img src="img/list-tags.png" style="margin-top: 40px;" />
+        </section>
+
+        <section>
+          <h2>List examples</h2>
+          <img src="img/example-lists.png" />
+        </section>
+
+        <section>
+          <h1>omg lets build.</h1>
+        </section>
+        <!-- A breakdown of CSS &#45; selector, property, value (10min) -->
+        <section>
+          <h2>What is CSS for?</h2>
+          <p><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets.</p>
+          <p>CSS is a style sheet language that lets you <br />style elements on the page.</p>
+          <p>CSS works <strong>in conjunction</strong> with HTML, but is not HTML itself.</p>
+        </section>
+
+        <section>
+          <h2>What can CSS do?</h2>
+          <p>All colors, positioning, and size.</p>
+          <img src="img/devbootcamp.jpg" />
+        </section>
+
+        <section>
+          <h2>What does CSS look like?</h2>
+          <img src="img/homepage-css.png" />
+        </section>
+
+        <section>
+          <h2>A CSS Rule</h2>
+          <img src="img/cssrule.png" />
+        </section>
+
+        <section>
+          <h2>A CSS Rule</h2>
+          <ul>
+            <li>A block of code is a <strong>CSS rule</strong></li>
+            <li>The rule starts with a selector</li>
+            <li>It has sets of properties and values</li>
+            <li>A property-value pair is a declaration</li>
+          </ul>
+          <pre>
+            <code>
+  p {
+    background-color: lime;
+  }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Selectors</h2>
+          <pre>
+            <code>
+  p { property: value; }
+            </code>
+          </pre>
+          <p>Selects all <strong>paragraph</strong> elements.</p>
+          <pre>
+            <code>
+  img { property: value; }
+            </code>
+          </pre>
+          <p>Selects all <strong>img</strong> elements.</p>
+        </section>
+
+        <section>
+          <h2>Declaration</h2>
+          <p>A <strong>declaration</strong> lets you modify a characteristic of an HTML element.</p>
+          <pre>
+            <code>
+  p {
+    color: white;
+    background-color: green;
+    font-family: Helvetica;
+  }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Color properties</h2>
+          <p>The 17 standard colors are:
+            <font color="aqua" style="background:black;">aqua</font>,
+            <font color="black">black</font>,
+            <font color="blue">blue</font>,
+            <font color="fuchsia">fuchsia</font>,
+            <font color="gray">gray</font>,
+            <font color="grey">grey</font>,
+            <font color="green">green</font>,
+            <font color="lime">lime</font>,
+            <font color="maroon">maroon</font>,
+            <font color="navy">navy</font>,
+            <font color="olive">olive</font>,
+            <font color="purple">purple</font>,
+            <font color="red">red</font>,
+            <font color="silver" style="background:black;">silver</font>,
+            <font color="teal">teal</font>,
+            <font color="white" style="background:black;">white</font>, and
+            <font color="yellow" style="background:black;">yellow</font>.
+          </p>
+        </section>
+
+        <section>
+          <h1>omg lets build.</h1>
+        </section>
+
+        <section>
+          <h2>Resources to learn more</h2>
+          <ul>
+            <li>Code Academy</li>
+            <li>CodeSchool</li>
+            <li>Treehouse</li>
+          </ul>
+        </section>
+        <!-- A quick demo of positioning (10min) -->
+        <section>
+          <h2>Thanks for having us!</h2>
+        </section>
+        <!-- A quick demo of parent and hierarchical property inheritance (5min) -->
+        <!-- Examples of some common CSS properties and values (5min) -->
+        <!-- DEMO : Either change your website with colors and images, or play with a prebuilt site (30 min) -->
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
